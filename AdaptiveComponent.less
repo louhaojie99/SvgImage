@@ -1,0 +1,29 @@
+.adaptiveComponentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .adaptiveContent {
+    position: relative;
+    width: 5360px;
+    height: 3904px;
+    // transform: scale(屏幕宽度 / 图像宽度);
+
+    .img {
+      width: 5360px;
+      height: 3904px;
+    }
+
+    // 这里开发内容正常写 css style 可以完全参考设计稿做开发
+    .layoutContainer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 5360px;
+      height: 3904px;
+      z-index: 99;
+    }
+  }
+}
